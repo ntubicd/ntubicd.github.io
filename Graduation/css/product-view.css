@@ -273,3 +273,60 @@ body {
     background-color: #626366;
     height: 550px;
 }
+
+.button-tin {
+    margin: 0;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 4px;
+    background-color: #e6e6e6;
+    border: 4px;
+    border-color: #ffe500;
+    color: #444444;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.button-tin span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button-tin span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button-tin:hover span {
+    padding-right: 25px;
+}
+
+.button-tin:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.formlink {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0;
+  }
