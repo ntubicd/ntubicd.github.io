@@ -42,16 +42,71 @@
                 line-height: 22px;
               }
             }
+          /* store list */
+          .store-list {
+            background-color: #f2f2f2;
+            padding: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .store-list table {
+            border-collapse: collapse;
+            margin: 0;
+            padding: 100px; 
+          }
+
+          .store-list td {
+            padding: 50px 25px;
+            width: 100vw;
+          }
+
+          .store-list a {
+            color:#3b3b3b;
+            text-decoration: none;
+          }
+
+          .store-list a:hover {
+            background-color:#FFE550;
+            transition: 0.5s ease;
+            border-radius: 10px;
+            padding: 5px 10px;
+
+            /* display: inline-block; */
+            
+          }
+
+          .store-section {
+            padding: 0px;
+          }
+          @media screen and (max-width: 768px) {
+            .store-list {
+              overflow-x: hidden;
+              white-space: nowrap;
+            }
+            .store-list td {
+              /* display: inline-block; */
+              border: none;
+              padding: 10px;
+            }
+            .store-section {
+              padding: 10px;
+            }
+          }
+
           
+          /* support store */
             .wrapper {
               margin: 0 auto;
               padding: 80px;
-              max-width: 1200px; /* 調整table寬度 */
+              max-width: 100vw; /* 調整table寬度 */
               background-color: #3b3b3b;
+              
             }
           
             .table {
-              margin: 40px 0px 100px 0px;
+              margin: 40px 0px 80px 0px;
               width: 100%;
               box-shadow: 0 1px 3px rgba(0,0,0,0.2);
               display: table;
@@ -122,6 +177,7 @@
                 display: block;
               }
             }
+
           </style>
           
      
@@ -150,12 +206,28 @@
                 </div>
             </div>
         </nav>
-
-        <!-- table -->
+<!-- 贊助廠商列表 -->
+<div style="height: 15vh;"></div>
+<h1 style="color: #FFE550;text-align: center; margin-bottom: 5%;">合作店家一覽表</h1>
+<div class="store-list" style="text-align: center;">
+  <table>
+    <tr>
+      <td><a href="#alc">恆器酒廠</a></td>
+      <td><a href="#clever_dripper">Clever Dripper</a></td>
+      <td><a href="#red_oolong_tea">紅烏龍合作社</a></td>
+    </tr>
+    <tr>
+      <td><a href="#star_tea">星源茶莊</a></td>
+      <td><a href="#cup">迪樂</a></td>
+      <!-- <td><a href="#store3">Store 3</a></td> -->
+    </tr>
+  </table>
+</div>
+<!-- table -->
 <!-- 恆器酒廠 -->
        
-        <div id= "alc" class="wrapper">
-            <h1 style="color: #FFE550;text-align: center;">恆器酒廠</h1>
+        <div id= "alc" class="wrapper" >
+            <h2 style="color: #FFE550;text-align: center;">恆器酒廠</h2>
   
             <div class="table">
               
@@ -201,7 +273,7 @@
         </div>
 <!-- clever dripper -->
         <div id= "clever_dripper" class="wrapper">
-          <h1 style="color: #FFE550;text-align: center;">Clever Dripper</h1>
+          <h2 style="color: #FFE550;text-align: center;">Clever Dripper</h2>
 
           <div class="table">
             
@@ -247,7 +319,7 @@
       </div>
 <!-- 紅烏龍 -->
       <div id= "red_oolong_tea" class="wrapper">
-        <h1 style="color: #FFE550;text-align: center;">紅烏龍合作社</h1>
+        <h2 style="color: #FFE550;text-align: center;">紅烏龍合作社</h2>
 
         <div class="table">
           
@@ -292,10 +364,9 @@
         
         </div>
       </div>
-
-<!-- 迪樂 -->
-      <div id= "cup" class="wrapper">
-        <h1 style="color: #FFE550;text-align: center;">迪樂</h1>
+<!-- 星源茶莊 -->
+      <div id= "star_tea" class="wrapper">
+        <h2 style="color: #FFE550;text-align: center;">星源茶莊</h2>
 
         <div class="table">
           
@@ -319,13 +390,60 @@
                 
             </div>
             <div class="cell" data-title="品牌理念">
-                <p>我們相信綠色企業與大自然必須和諧共生、商業與環境需友善並存。
-                  一個塑膠袋的平均使用時間為25分鐘，卻要花上至少470年降解，而一條每年傷害數以萬計海洋生物的塑膠製漁網線，更須經過600年才能在大海裡降解！<br><br>
-                  迪樂科技貫徹「綠色營運、綠色盟友、綠色工藝、綠色世界」的企業發展戰略，透過創新技術持續優化製程以降低能耗，為客戶提供更節能、環保永續、高ESG價值、低碳排的產品與解決方案，致力於減少來自傳統塑膠製品對地球的污染！<br><br>
-                  
-                  GREEN THE WORLD TOGETHER!
-                  We believe in the new thinking of the harmonious coexistence of green enterprises and the environment, and the concurrency of business and environmental protection.
-                  The average service time of a plastic bag is only 25 minutes, while it takes about 470 years for its degradation! Not to mention that a plastic fishing net thread that harms numerous marine lives annually takes 600 years to degrade in the ocean!<br><br>
+                <p>「創造人與茶之間不同的味覺感動」。<br><br>
+                  茶，在我們的生活中隨手可見，但你知道茶的真面目嗎？
+                  什麼是最好的茶？沒有標準答案。每個年齡層跟茶的連結都不同，在星源，看見茶的更多可能。<br><br>
+                  在星源，你能看茶、玩茶、摸茶、喝茶、聞茶、舞茶、吃茶，鹹的、甜的、冷的、熱的，用心感受屬於宜蘭不為人知的茶秘密。</p>
+            </div>
+            <div class="cell" data-title="特色產品">
+              <h5 class= "text-center" style="margin-top: 20px;">柚花烏龍茶</h5>
+                <p>
+                  為了柚花茶，我們認養了一片五分地的柚園，完全不使用化學肥料。等待好天氣，人工除草摘花，使用特殊燻製法，將花的香氣燻進茶中，無香料、無化學香精。<br><br>
+                  天然的香氣加上在地的無毒茶，製成這季節限定難得的柚花茶；先聞濃濃的柚花香氣，入口回甘的茶香，茶湯香氣濃郁高雅，彷彿置身春天的柚園中，入喉留香，令人心曠神怡！"</p>
+            </div>
+            <div class="cell" data-title="更多資訊">
+                <p>
+                  <b>實體店鋪</b><br>
+                  269宜蘭縣冬山鄉中城路115號<br><br>
+                  <a href="https://www.joo.com.tw/xytea/" style="color:grey;">點選進入官網</a></p>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+
+<!-- 迪樂 -->
+      <div id= "cup" class="wrapper">
+        <h2 style="color: #FFE550;text-align: center;">迪樂</h2>
+
+        <div class="table">
+          
+          <div class="row header">
+            <div class="cell">
+            
+            </div>
+            <div class="cell">
+              品牌理念
+            </div>
+            <div class="cell">
+              特色產品
+            </div>
+            <div class="cell">
+              店舖資訊
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="cell" data-title="">
+                
+            </div>
+            <div class="cell" data-title="品牌理念">
+                <p style="color: rgb(136, 192, 52);">我們相信綠色企業與大自然必須和諧共生、商業與環境需友善並存。</p>
+                <p>一個塑膠袋的平均使用時間為25分鐘，卻要花上至少470年降解，而一條每年傷害數以萬計海洋生物的塑膠製漁網線，更須經過600年才能在大海裡降解！<br><br>
+                  迪樂科技貫徹「綠色營運、綠色盟友、綠色工藝、綠色世界」的企業發展戰略，透過創新技術持續優化製程以降低能耗，為客戶提供更節能、環保永續、高ESG價值、低碳排的產品與解決方案，致力於減少來自傳統塑膠製品對地球的污染！</p>
+                <p style="color: rgb(136, 192, 52);">GREEN THE WORLD TOGETHER!
+                  We believe in the new thinking of the harmonious coexistence of green enterprises and the environment, and the concurrency of business and environmental protection.</p>
+                <p>The average service time of a plastic bag is only 25 minutes, while it takes about 470 years for its degradation! Not to mention that a plastic fishing net thread that harms numerous marine lives annually takes 600 years to degrade in the ocean!<br><br>
                   With the corporate strategy of “green operation, green partnership, green technology, and green world”, DELUXE have continuously engaged in technology innovation to decrease energy consumption. As a result, we not only provide our clients with energy-saving, eco-friendly, high ESG value and low-carbon emitting products and solutions for reducing the pollution of plastic products but also keep enhancing our energy efficiency, mitigating carbon footprint and energy consumption of our manufacturing process and end-products!"</p>
             </div>
             <div class="cell" data-title="特色產品">
@@ -350,10 +468,10 @@
             </div>
             <div class="cell" data-title="更多資訊">
                 <p>
-                  <a href="https://www.facebook.com/deluxetechnologygroup/" style="color:grey;">迪樂FB</a><br>
-                  <a href="https://www.instagram.com/lovedeluxetech" style="color:grey;">迪樂IG</a><br>
-                  <a href="https://www.instagram.com/lovedeluxetech" style="color:grey;">迪樂IN</a><br>
-                  <a href="https://www.youtube.com/@DeluxeTechnologyGroup" style="color:grey;">迪樂YT</a><br>
+                  <a href="https://www.facebook.com/deluxetechnologygroup/" style="color:grey;">迪樂FB</a><br><br>
+                  <a href="https://www.instagram.com/lovedeluxetech" style="color:grey;">迪樂IG</a><br><br>
+                  <a href="https://www.linkedin.com/company/30230868" style="color:grey;">迪樂IN</a><br><br>
+                  <a href="https://www.youtube.com/@DeluxeTechnologyGroup" style="color:grey;">迪樂YT</a><br><br>
                   <a href="http://deluxe-tech.com" style="color:grey;">點選進入官網</a></p> 
                 
             </div>
