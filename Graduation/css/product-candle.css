@@ -32,7 +32,7 @@ body
 
 
 .product_info{
-  width: 300px;
+  width: 260px;
   text-align: justify;
 }
 
@@ -141,43 +141,3 @@ body
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
-
-.button-tin {
-  border-radius: 4px;
-  background-color: #ffe500;
-  border: none;
-  color: #444444;
-  text-align: center;
-  font-size: 20px;
-  padding: 20px;
-  width: 250px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 10px;
-  margin-top: 20px;
-}
-
-.button-tin span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button-tin span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button-tin:hover span {
-  padding-right: 25px;
-}
-
-.button-tin:hover span:after {
-  opacity: 1;
-  right: 0;
-}

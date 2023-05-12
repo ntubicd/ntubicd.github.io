@@ -79,6 +79,13 @@
 
 }
 
+@media (max-width:800px) {
+    #aboutBICD{
+        height: 1000vh;
+    }
+
+}
+
 #cardbg1{
     background-image: url();
     background-repeat: no-repeat;

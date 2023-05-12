@@ -2,9 +2,12 @@ body {
     margin: 0;
     padding: 0;
   }
+.navbar-overlay {
+    background-color: rgba(211, 37, 37, 0.5); /* 透明度為 50% 的黑色 */
+}
   .wrapper {
     height: 100vh;
-    background-image:url("https://yuchingchien.github.io/assets/UPbanner.png");
+    background-image:url("/assets/03_up_banner.png");
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -18,11 +21,15 @@ body {
     transform: translateX(-50%) translateY(-50%);
     background-image: radial-gradient(circle at center, transparent, #000 20%);
   }
+
+
   
 #sect2{
-    background-image: url(https://yuchingchien.github.io/assets/sect2bg.png);
+    /* background-image:url("assets/03_bg"); */
     background-attachment: fixed;
 }
+
+
 
 #sect3{
   background-image: url(https://yuchingchien.github.io/assets/sect2bg.png);
