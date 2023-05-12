@@ -8,6 +8,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Passero+One" >
     <link rel="stylesheet" href="css/bicd-home.css">
     <link rel="stylesheet" href="6_maze.css/">
 
@@ -20,44 +23,148 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link href="css/bootstrap_styles.css" rel="stylesheet">
+    <link href="css/6_maze.css" rel="stylesheet">
+
 
     <title>迷宮之外</title>
 </head>
 
 <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="mainNav" style="width: 100%;">
-        <div class="container ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top py-3 navbar-overlay" style="width: 100%;">
+        <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="assets/logo_white.png" style="width: 30px; margin-right: 5px;">日常，不日常</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon dark"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive" style="text-align: right;">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0" style="text-shadow: 0px 0px 3px rgba(40, 40, 40, 0.5)">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger " href="#page-top">回首頁</a>
-                    </li><li class="nav-item">
-                        <a class="nav-link js-scroll-trigger " href="#projects">專案一覽</a>
+                        <a class="nav-link js-scroll-trigger " href="index.html">回首頁</a>
                     </li>
-
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="donate.html">募資平台</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="activity_information.html">活動資訊</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="About_us.html">關於我們</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="support.html">贊助廠商</a></li>
-
                 </ul> 
             </div>
         </div>
     </nav>
+    <!-- leading -->
+    <div class="banner" style="background-image: url(assets/06_Leading_1+2_bg.png) ;overflow: hidden; height: 100vh;">
+        <div id="leadanimation">
+            <img class="leadingword" src="assets/06_Leading_1_word.png" style="position:absolute; z-index: 4;"  >
+            <img class="leadingmainlogo" src="assets/06_Leading_2_main_logo.png" style="position:absolute; z-index: 5;" >
+            <img class="leadingsmalllogo" src="assets/06_Leading_2_small_logo.png" style="position:absolute; z-index:6;"  >
+        </div>
+    </div>
     <!-- section 1 -->
-    <div class="banner" style="background-color: rgba(128, 128, 128, 0.196);overflow: hidden;">
-        <img src="assets/6_maze_banner.png">
+    <div style="height: 10vh; background-color: #ECF1FA;"></div>
+    <div class="sect1" style="overflow: hidden;height: 50vh;background-color: #ECF1FA;">
+        <div class="word">
+            <span  style='line-height: 40px;font-size:25px;' class="text-left">
+            <h1><b>專案緣起 </b></h1>
+            </span>
+            <span  style='line-height: 30px;font-size:18px;'  class="text-left">
+            <p>「環保」與「永續」發展至今，已是當代社會顯學之一，並被廣泛認為是全球趨勢。為解決污染問題，許多解決方案因應而生。然而，因污染問題複雜、人們生活情境與立場亦存在差異，使環保這道題不存在標準答案。在這如同迷宮般複雜的現況裡，或許「有意識的選擇」才是我們一直在追尋的出口。</p>
+            <p>對你來說，什麼是「有意識的選擇」呢？</p>
+            </span> 
+        </div>
     </div>
 
-    <!-- section 2 -->
-    <section class="content-section" id="sect2" style="overflow: hidden;">
+    <!-- section 1 迷宮區 -->
+    <section class="content-section" id="sect2" style="overflow: hidden; background-color: #ECF1FA;">
         <div class="container" style="display: flex; justify-content: center; align-items: center;">
             <img src="assets/6_sect2_map.png" style="width: 50%;">
         </div>
     </section>
+
+    <!-- section 2 文字 -->
+    <div class="sect2" style="overflow: hidden;background-color: #ECF1FA;">
+        <div class="word">
+            <span  style='line-height: 40px;font-size:25px;' class="text-left">
+            <h1><b>設計理念</b></h1>
+            </span>
+            <span  style='line-height: 30px;font-size:18px;'  class="text-left">
+            <p>本專案希望透過「迷宮式旅程」，使觀展者進一步感受與詮釋何謂「有意識的生活、有意識的選擇」。為了重現日常生活中的綠色資訊接收過程，我們利用39個圍籬、20組展品打造這座迷宮。走進迷宮的人們不僅將被展品圍繞，同時也聽得見細微的耳語，彷如逛書店時身旁陌生人的窸窣討論。</p>
+            <p>和其他迷宮不太一樣的是，「此路不通」不代表選擇錯誤，「找到出口」也不代表抵達目的地。這座迷宮真正想要反映的是「來自多方的大量不同資訊」的真實狀況，以及身處在其中的你我又會如何理解、產生何種反應。</p>
+            <p>如果迷宮之內是資訊集散之處，那麼迷宮之外又將迎來什麼？</p>
+            </span> 
+            <span  style='line-height: 40px;font-size:25px;' class="text-center">
+                <p><b>『所謂有意識的「意識」到底來自哪裡？』</b></p>
+            </span>
+            <span  style='line-height: 30px;font-size:18px;'  class="text-left">
+                <p>關於做出一個選擇，
+                    在我們的觀察與歸納裡，其過程可能會由以下四個行動相互組成：
+                </p>
+            </span>
+        </div>
+        <div  class="container" style="display: flex; justify-content: center; align-items: center;">
+            <img class="stage" src="assets/06_sect2_pic1.png" >
+        </div>
+        <div class="word">
+            <span  style='line-height: 30px;font-size:18px;'  class="text-left">
+                <p>在我們的想像中，「有意識」的過程得出的結果就是遵循意志。並非指我們需要抱有多廣大的理念，我們探討的是更加根本而簡單──但卻十分不容易被想起──的心態，也就是「清楚知道自己的選擇來自於哪裡」。
+                </p>
+            </span>
+        </div>
+        <div  class="container" style="display: flex; justify-content: center; align-items: center;">
+            <img class="why" src="assets/06_sect2_pic2.png" >
+        </div>
+        <div class="word">
+            <span  style='line-height: 30px;font-size:18px;'  class="text-left">
+                <p>因此，我們希望讓各位在接收迷宮內的資訊後，能夠看看迷宮外各種不同的「有意識的選擇」。若用一句話概括本專案的立場，即是「只要是有意識地選擇，沒有人可以評判其為一個錯誤。」
+                </p>
+                <p>可以批判選擇過程的脈絡，可以討論資訊的解讀是否偏頗，但「選擇」本身並不是一個錯誤，即使我們不認同這個選擇與行為，也沒有人能夠去指著遵循自我意志的對方的鼻子說：「你的選擇就是錯誤」，因為立場不同並非評斷是非對錯的依據。
+                </p>因為「有意識的選擇」，是達成溝通與交流的必要元素，不僅是與世界上立場多元的他人，與自身的對話更是。
+                <p>
+
+                </p>
+            </span>
+        </div>
+    </div>
+
+    <!-- section 3 -->
+    <div class="sect3" style="overflow: hidden;background-color: #ECF1FA;">
+        <div class="word">
+            <span  style='line-height: 40px;font-size:25px;' class="text-left">
+            <h1><b>策展人的話</b></h1>
+            </span>
+            <span  style='line-height: 30px;font-size:18px;'  class="text-left">
+            <p>選擇以「海廢」作為策展主題是一個開心的起點，但沒想到設計過程會如此曲折，因為我們總會陷入自我矛盾，像是「我們策展叫人家做環保，但策展行為484本身就不環保？」、「你做環保策展的欸但你用那麼多塑膠」，諸如此類的靈魂拷問。但也許策展本身就是一場自我對話吧，經過半年掙扎終於找到讓我們自己信服的理念，有足夠底氣策畫這場跟環保、永續有關的展覽。對我自己來說，策劃「有意識的選擇」最大的收穫，或許就是在日常生活中更有意識的觀察自己與他人如何「選擇」，聽見與自己立場不同的人的聲音，並且發現雖然立場不同但我們還是可以選擇好好共處。
+            </p>
+            <p>雖然主題叫做「迷宮之外」，但今天就讓我們都先好好在迷宮裡迷路一下吧！</p>
+            </span> 
+        </div>
+    </div>
+
+    <!-- ending -->
+     <div class="ending" style="overflow: hidden;height: 250vh;background-color: #ECF1FA;">
+        <div class="word">
+            <span  style='line-height: 40px;font-size:25px;' class="text-center">
+            <h1><b>其他人怎麼說</b></h1>
+            </span>
+            <span  style='line-height: 30px;font-size:18px;'  class="text-center">
+            <p>點擊查看訪談內容</p>
+            </span> 
+        </div>
+        <div class="container_end" >
+            <div class="circle text-left" style="margin:5%;"  >
+              <img class="p1" src="assets/06_詹凱宗_個人照.jpg">
+              <span><h5 class="text-center" style="color: #1b1c1e;margin-top: 8%;"><b>詹凱宗</b></h5>
+                <p style="color: #2f3034; font-size:16px" >NTUAR動物權利發展社社長</p>
+                <p style="color: #4d4f55; font-size:14px;;margin-top: -8%;">「回到核心：自己是如何被觸動的。」</p></span>
+            </div>
+            <div class="circle text-left "  style="margin:5%; ">
+                <img class="p2" src="assets/06_林心恬_個人照.jpeg">
+                <span><h5 class="text-center" style="color: #1b1c1e;margin-top: 8%;"><b>林心恬</b></h5>
+                  <p style="color: #2f3034; font-size:16px" >國立成功大學環境工程學系助理教授</p>
+                  <p style="color: #4d4f55; font-size:14px;;margin-top: -8%;">「每個選擇都是有意識的選擇。」</p></span>
+            </div>
+            <div class="circle text-left " style="margin:5%; " >
+                <img class="p3" src="assets/06_鄭鈺弘_個人照.jpeg" >
+                <span><h5 class="text-center" style="color: #1b1c1e;margin-top: 8%;"><b>鄭鈺泓</b></h5>
+                    <p style="color: #2f3034; font-size:16px" > 國立交通大學經營管理研究所碩士 </p>
+                    <p style="color: #4d4f55; font-size:14px;;margin-top: -8%;">「拉長選擇前的時間，減少無意識選擇的發生。」</p></span>
+            </div>
+        </div>
+    </div>
+
+
  
 
 
@@ -66,29 +173,31 @@
     <!-- Footer -->
     <footer class="footer text-center" style="height: 220px; background-color: #1b1c1e;">
         <div class="container">
-            <ul class="list-inline mb-4">
-                <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white mr-3 socialbtm" href="https://www.facebook.com/NTUBICD.GPExpo" target="_blank">
-                        <i class="fa-brands fa-facebook-f"></i>
-                        <div class="footercap">Facebook</div>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white mr-3 socialbtm" href="index.html">
-                        <i class="fa-solid fa-house"></i>
-                        <div class="footercap">回到首頁</div>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white socialbtm" href="https://instagram.com/ntubicd.expo?igshid=YmMyMTA2M2Y=" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                        <div class="footercap">Instagram</div>
-                    </a>
-                </li>
-            </ul>
-            <p class="text-muted small mb-0">Copyright &copy; NTU BICD 2023</p>
+          <ul class="list-inline mb-4">
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white mr-3 socialbtm" href="https://www.facebook.com/NTUBICD.GPExpo" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+                <div class="footercap">Facebook</div>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white mr-3 socialbtm" href="index.html">
+                <i class="fa-solid fa-house"></i>
+                <div class="footercap">回到首頁</div>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white socialbtm" href="https://instagram.com/ntubicd.expo?igshid=YmMyMTA2M2Y=" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+                <div class="footercap">Instagram</div>
+              </a>
+            </li>
+          </ul>
         </div>
-    </footer>
+        <p class="text-muted small mb-0" style="clear:both; text-align:center;">&copy; NTU BICD 2023</p>
+      </footer>
+      
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -138,8 +247,6 @@
         });
     });
 </script>
-
-
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
